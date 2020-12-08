@@ -1,139 +1,51 @@
-/* body, h1, h2, h3, h4, h5, h6, p, ul, li, ol{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-} */
-
-/* 
-This is comment area 
-
-*/
-
 *{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;  
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+.para{
+    cursor: pointer;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
 
+/*
+relative
+absolute
+fixed
+static
+sticky
+*/
 .main-div{
     width: 500px;
     height: 500px;
-    background-color: #aeaeca;
-  
-}
-.imageDiv{
-   
-    margin-left: 30px;
-    padding-left: 50px;
-    width: 500px;
-    height: 500px;
-}
-.imageDiv img {
-    width: 395px;
-    height: 223px;
-    margin: 20px;
-   
-}
-
-.test{
-    width: 100px;
-    height: 100px;
-    background-color: #f00;
-}
-
-
-
-.main-div, .imageDiv, .test, .imageDiv> img{
-    margin: auto;
-    border: 10px dotted red;
-}
-
-
-
-/* This is heading Section */
-.header-area{
-
-}
-
-.header-area .logo{
-    float: left;
-}
-
-.header-area .logo img{
-    width: 150px;
-    height: 120px;
-    padding: 0px 20px;
-}
-
-.header-area .menu{
-    float: right;
-}
-
-.header-area .menu ul{
-    
-}
-
-.header-area .menu ul li{
-    display: inline-block;
-    list-style: none;
-   
-}
-
-.header-area .menu ul li a{
-    display: inline-block;
-    text-decoration: none;
-    padding: 40px;
-    background-color: #8cbacc;
-    color: #ccc;
-    min-width: 200px;
-    text-align: center;
-    font-weight: bold;
-    border: 2px solid #f00;
-}
-.header-area .menu ul li a:hover{
-    color: black;
-    background-color: #fff;
-    font-size: 20px;
-    text-transform: uppercase;
-}
-
-.topbar{
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-}
-.topbar .social-icon a{
-    padding: 0px 10px;
-    display: inline-block;
-    border: 1px solid #f00;
-}
-
-
-.content{
-    display: block;
+    background-color: rgb(71, 129, 184);
+    position: relative;
+    top: 30px;
+    left: 50px;
     overflow: hidden;
 }
-
-
-.content{
-    display: flex;
-}
-.content .sidebar{
-   padding: 50px;
-}
-
-.content .article{
-    padding: 50px;
+.main-div .child-div{
+    width: 300px;
+    height: 300px;
+    background-color: rgb(184, 49, 56);
+    position: absolute;
+    top: 400px;
 }
 
 
+.btn{
+    padding: 10px;
+    background-color: #f00;
+    color: #fff;
+    font: bold;
+    cursor: pointer;
+    /* position: fixed;
+    top: 100px;
+    left: 0px; */
 
-
-
-.inner-content{
-    color: red;
-   padding: 0px 30px;
-    display: inline-block;
-    border: 1px solid red;
+    position: sticky;
+    top: 0px;
 }
